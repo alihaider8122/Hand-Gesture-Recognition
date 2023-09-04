@@ -36,73 +36,56 @@ Make sure you have the following software and packages installed:
 
    ```sh
    git clone https://github.com/yourusername/hand-gesture-detection.git
-Change into the project directory:
 
-sh
-Copy code
-cd hand-gesture-detection
-Install the required Python packages:
+ ## Usage
 
-sh
-Copy code
-pip install opencv-python keras tensorflow numpy pyttsx3
-Usage
-Run the main application script:
+1. Run the main application script:
 
-sh
-Copy code
-python hand_gesture_detection.py
-Ensure your webcam or camera is connected and functional.
+   python model prediction.py
 
-The application will start capturing video from the camera.
+2. Ensure your webcam or camera is connected and functional.
 
-Hold your hand in front of the camera and make various gestures.
+3. The application will start capturing video from the camera.
 
-The application will recognize and highlight the detected hand gestures in real-time.
+4. Hold your hand in front of the camera and make various gestures.
 
-Press the 'Esc' key to exit the application.
+5. The application will recognize and highlight the detected hand gestures in real time.
 
-Model Training
+6. Press the 'Esc' key to exit the application.
+
+## Model Training
+
 If you want to retrain the gesture recognition model with your own dataset, follow these steps:
 
-Prepare a dataset of hand gesture images, organized into folders by gesture labels.
+1. Prepare a dataset of hand gesture images, organized into folders by gesture labels.
 
-Use the provided model training script:
+2. Use the provided model training script:
 
-sh
-Copy code
-python train_model.py --dataset dataset_folder --model output_model.h5
-Replace dataset_folder with the path to your dataset and output_model.h5 with the desired model name.
+   python train_model.py --dataset dataset_folder --model output_model.h5
 
-The script will train a deep learning model using your dataset and save the trained model to the specified file.
+   Replace `dataset_folder` with the path to your dataset and `output_model.h5` with the desired model name.
 
-Built With
-Python
-OpenCV
-Keras
-TensorFlow
-Contributing
+3. The script will train a deep learning model using your dataset and save the trained model to the specified file.
+
+
+## Contributing
+
 If you would like to contribute to this project, please follow these steps:
 
-Fork the repository on GitHub.
+1. Fork the repository on GitHub.
 
-Clone your fork locally:
+2. Clone your fork locally:
 
-sh
-Copy code
-git clone https://github.com/yourusername/hand-gesture-detection.git
-Create a new branch for your feature or bug fix:
+   git clone https://github.com/yourusername/hand-gesture-detection.git
 
-sh
-Copy code
-git checkout -b feature/your-feature-name
-Make your changes and commit them with descriptive commit messages.
+3. Create a new branch for your feature or bug fix:
 
-Push your changes to your fork on GitHub:
+   git checkout -b feature/your-feature-name
 
-sh
-Copy code
-git push origin feature/your-feature-name
-Create a pull request from your branch to the main repository.
+4. Make your changes and commit them with descriptive commit messages.
 
+5. Push your changes to your fork on GitHub:
 
+   git push origin feature/your-feature-name
+
+6. Create a pull request from your branch to the main repository.
